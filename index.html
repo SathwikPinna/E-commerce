@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce Product Catalog Capstone Project built for Thiranex Web Development Internship Task 5.">
+    <title>Sathwik Pinna | Task 5 - Capstone E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Storefront</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+        <div class="cart-info">
+            <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <!-- Main Capstone Content -->
+    <main>
+        <section class="hero-banner">
+            <h1>Discover Premium Products</h1>
+            <p>Explore our curated catalog of modern tech and lifestyle essentials.</p>
+        </section>
+
+        <!-- Category Filters -->
+        <div class="category-filters">
+            <button class="filter-tab active" data-category="all">All Products</button>
+            <button class="filter-tab" data-category="electronics">Electronics</button>
+            <button class="filter-tab" data-category="lifestyle">Lifestyle</button>
+        </div>
+
+        <!-- Product Catalog Grid -->
+        <div class="product-grid" id="product-grid">
+            <!-- Dynamically populated via app.js -->
+        </div>
+    </main>
+
+    <!-- Cart Modal Overlay -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Shopping Cart</h2>
+                <button id="close-cart">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items list -->
+            </div>
+            <div class="cart-footer">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sathwik Pinna. Built for Thiranex Web Development Capstone.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
